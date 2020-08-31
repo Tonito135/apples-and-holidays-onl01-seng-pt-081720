@@ -1,3 +1,5 @@
+require 'pry'
+
 holiday_supplies = {
   :winter => {
     :christmas => ["Lights", "Wreath"],
@@ -56,6 +58,7 @@ end
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   # code here
   # remember to return the updated hash
+# binding.pry 
   holiday_hash[season][holiday_name] = supply_array
 end
 # add_new_holiday_with_supplies(holiday_supplies, :fall, "CODEDAY", ["computer", "mouse", "coffee"])
